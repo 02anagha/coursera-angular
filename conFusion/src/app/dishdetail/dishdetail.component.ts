@@ -1,4 +1,5 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Dish } from '../shared/dish';
 
 const DISH = {
 	name: 'Uthappizza',
@@ -49,7 +50,6 @@ const DISH = {
 })
 export class DishdetailComponent {
 
-	constructor() { }
-
-	dish = DISH;
+	@Input()
+	dish: Dish;
 }
