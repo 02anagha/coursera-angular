@@ -10,9 +10,9 @@ import { DISHES } from '../shared/dishes';
 	encapsulation: ViewEncapsulation.None
 })
 export class MenuComponent implements OnInit{
-	dishes: Dish[];
+	dishes!: Dish[];
 
-  selectedDish: Dish;
+  selectedDish!: Dish;
 
   constructor(private dishService: DishService) { }
   
